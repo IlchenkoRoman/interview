@@ -16,7 +16,6 @@ const List = class {
         .catch(err => console.log(err))
 
         $('#form').on('submit', (e) => {this.add(e)})
-        // $('#tasksList').on('click', (e) => {this.delete(e)})
     }
     add(e) {
         if(validation() == true) {const newItem = {
@@ -44,20 +43,7 @@ const List = class {
         this.save(newItem)}
     }
 
-// delete(e){
-//         if (e.target.dataset.action === 'delete'){
-//         const parentId = e.target.id
-//         var i
-//         this.items.forEach((item, index) => {
-//             if(item.id === Number(parentId)){ 
-//                 i = index
-//             }
-//         })
-//         this.items.splice(i, 1);}
-//         if(tasksList.children.length === 1) {
-//             emptyList.classList.remove('none')
-//     }
-// }
+
 
     append(item){
         this.items.push(item)
@@ -138,21 +124,6 @@ var inputButtons = document.getElementsByClassName('input-button');
 var checkboxes = document.getElementsByClassName('btn-check');
 var inputLinks = document.getElementsByClassName('input-link');
 
-
-
-
-
-
-// const deleteTask = (e) => {
-//     if (e.target.dataset.action === 'delete'){
-//     parenNode = e.target.closest('.list-group-item')
-//     console.log(parenNode.id)
-//     // parenNode.remove()
-// }
-//     if(tasksList.children.length === 1) {
-//         emptyList.classList.remove('none')
-//     }
-// }
 
 const openSettings = (e) =>{
     if(option.value !== '0'){
