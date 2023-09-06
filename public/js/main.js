@@ -55,9 +55,6 @@ const List = class {
                 <button type="button" data-action="done" class="btn-action">
                     <img src="./img/tick.svg" alt="Done" width="18" height="18">
                 </button>
-                <button type="button" data-action="delete" class="btn-action">
-                    <img src="./img/cross.svg" alt="Done" width="18" height="18">
-                </button>
             </div>
         </div>
         <div class = 'hiden none'>
@@ -78,9 +75,6 @@ const List = class {
             <div class="task-item__buttons">
                 <button type="button" data-action="done" class="btn-action">
                     <img src="./img/tick.svg" alt="Done" width="18" height="18">
-                </button>
-                <button type="button" data-action="delete" class="btn-action">
-                    <img src="./img/cross.svg" alt="Done" width="18" height="18">
                 </button>
             </div>
         </div>
